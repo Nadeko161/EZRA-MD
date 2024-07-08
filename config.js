@@ -1,4 +1,4 @@
-const { Sequelize } = require("sequelize");
+construção { Sequelize } = require("sequelize");
 const fs = require("fs");
 if (fs.existsSync("config.env"))
   require("dotenv").config({ path: "./config.env" });
@@ -12,9 +12,9 @@ module.exports = {
   ANTILINK: toBool(process.env.ANTI_LINK) || false,
   LOGS: toBool(process.env.LOGS) || true,
   ANTILINK_ACTION: process.env.ANTI_LINK || "kick",
-  SESSION_ID:process.env.SESSION_ID || "Ezra-XD--BA!TL^-x@94-fNtr6hj*",
+  SESSION_ID:process.env.SESSION_ID || "Ezra-XD--rib7gt6vqw1ANd4ivAC30",
   LANG: process.env.LANG || "EN",
-  HANDLERS: process.env.PREFIX || '^[.]',
+  HANDLERS: process.env.PREFIX || '.',
   RMBG_KEY: process.env.RMBG_KEY || false,
   BRANCH: "master",
   STICKER_DATA: process.env.STICKER_DATA || "EZRA-MD;WhatsAppBot",
@@ -22,7 +22,7 @@ module.exports = {
   AUDIO_DATA: process.env.AUDIO_DATA || "BOT;ABHIY;https://i.imgur.com/o4bQB14.jpeg",
   ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || "false",
   CAPTION: process.env.CAPTION || "!",
-  WORK_TYPE: process.env.WORK_TYPE || "private",
+  WORK_TYPE: process.env.WORK_TYPE || "public",
   DATABASE_URL: DATABASE_URL,
   DATABASE:
     DATABASE_URL === "./lib/database.db"
@@ -43,7 +43,7 @@ module.exports = {
         }),
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || " ",
   HEROKU_API_KEY: process.env.HEROKU_API_KEY || " ",
-  SUDO: process.env.SUDO || "0",
+  SUDO: process.env.SUDO || "258864114607",
   IMGBB_KEY: ["76a050f031972d9f27e329d767dd988f", "deb80cd12ababea1c9b9a8ad6ce3fab2", "78c84c62b32a88e86daf87dd509a657a"],
   ALIVE_MSG: process.env.ALIVE_MSG || "Hey I'm Alive Now",
 };
